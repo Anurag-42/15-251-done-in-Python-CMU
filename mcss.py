@@ -27,7 +27,8 @@ def mcss_div_conq_helper(s):
     if len(s) == 0: #O(1) time (work and span) and space
         return (0,0,0,0)
     elif len(s) == 1: #O(1) time (work and span) and space
-        m = max(0,s[0])
+        # m = max(0,s[0])
+        m = s[0]
         return (m,m,m,s[0])
     else:
         total_len = len(s) #O(1) time (work and span) and space
